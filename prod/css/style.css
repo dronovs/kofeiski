@@ -92,6 +92,7 @@ legend {
 }
 .additional-names li, .warming-drinks-names li, .coffee-drinks-names li, .classic-drinks-names li {
   border-bottom: 1px dashed #354259;
+  margin-bottom: 2px;
 }
 
 .additional-prices, .warming-drinks-prices, .coffee-drinks-prices, .classic-drinks-prices {
@@ -107,6 +108,23 @@ legend {
 }
 .additional-prices li, .warming-drinks-prices li, .coffee-drinks-prices li, .classic-drinks-prices li {
   border-bottom: 1px dashed #354259;
+  margin-bottom: 2px;
+}
+
+/*dark theme*/
+.dark-theme {
+  margin-bottom: 10px !important;
+  color: #F0EBE3;
+}
+
+.dark-theme {
+  width: 50%;
+  padding: 0 5px;
+  letter-spacing: 5px;
+}
+.dark-theme li {
+  border-bottom: 1px dashed #F0EBE3;
+  margin-bottom: 2px;
 }
 
 body {
@@ -116,11 +134,19 @@ body {
   background-color: #F0EBE3;
 }
 
+.body-dark-theme {
+  padding: 0 5px;
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono", "Droid Sans Mono", monospace, monospace;
+  font-size: 15px;
+  background-color: #354259;
+}
+
 .container {
   width: 100%;
   max-width: 576px;
   margin: 0 auto;
   padding: 0;
+  box-shadow: 0px 5px 20px 0px #00000029;
 }
 
 h2 {
@@ -131,6 +157,7 @@ h2 {
   animation-name: pulse;
   animation-duration: 5s;
   animation-iteration-count: infinite;
+  text-align: center;
 }
 
 .h2titles {
@@ -139,8 +166,27 @@ h2 {
   animation-iteration-count: infinite;
 }
 
+.carousel {
+  margin-bottom: 15px;
+  padding: 0;
+}
+.carousel img {
+  max-height: 300px;
+}
+
+.unchecked-language {
+  display: none;
+}
+
+.header-wrapper {
+  display: flex;
+  border-bottom: 1px dashed #354259;
+  margin-bottom: 10px;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .main-logo-wrapper {
-  border-bottom: 1px dashed black;
   margin-top: 5px;
   margin-bottom: 5px;
 }
@@ -153,61 +199,69 @@ h2 {
   max-height: 60px;
 }
 
-h2 {
-  text-align: center;
+.lang-btns-wrapper {
+  display: flex;
+  max-height: 60px;
 }
 
-.carousel {
-  width: 100%;
-  margin-bottom: 15px;
-  padding: 0;
-}
-.carousel img {
-  max-height: 300px;
+.lang-button {
+  max-height: 30px;
+  color: #354259;
+  border: 1px solid #354259;
+  border-radius: 30%;
+  padding: 0 2px;
 }
 
-@keyframes skewText {
-  0% {
-    transform: skew(0deg);
-  }
-  25% {
-    transform: skew(-25deg);
-  }
-  50% {
-    transform: skew(0deg);
-  }
-  75% {
-    transform: skew(25deg);
-  }
-  100% {
-    transform: skew(0deg);
-  }
+.lang-button:hover {
+  transform: scale(1.1);
+  background: #354259;
+  color: #F0EBE3;
 }
-@keyframes skewTextAnother {
-  0% {
-    transform: skew(0deg);
-  }
-  25% {
-    transform: skew(25deg);
-  }
-  50% {
-    transform: skew(0deg);
-  }
-  75% {
-    transform: skew(-25deg);
-  }
-  100% {
-    transform: skew(0deg);
-  }
+
+.ukr-lang-btn {
+  margin-right: 5px;
 }
-@keyframes bodyOpacity {
-  from {
-    opacity: 0%;
-  }
-  to {
-    opacity: 100%;
-  }
+
+.theme-tumbler {
+  display: flex;
+  justify-content: start;
+  width: 50px;
+  height: 20px;
+  border: 1px solid black;
+  border-radius: 10px;
+  padding-top: 1px;
+  padding-left: 2px;
+  padding-right: 2px;
 }
+
+.theme-tumbler-circle {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  border: 1px solid black;
+  border-radius: 50%;
+}
+
+.header-dark-theme {
+  color: #F0EBE3;
+  border-bottom: 1px dashed #F0EBE3;
+  margin-bottom: 10px;
+  justify-content: space-between;
+  align-items: center;
+}
+.header-dark-theme .lang-button {
+  max-height: 30px;
+  color: #F0EBE3;
+  border: 1px solid #F0EBE3;
+  border-radius: 30%;
+  padding: 0 2px;
+}
+.header-dark-theme .lang-button:hover {
+  transform: scale(1.1);
+  background: #F0EBE3;
+  color: #354259;
+}
+
 .classic-drinks-prices {
   letter-spacing: 0;
 }
