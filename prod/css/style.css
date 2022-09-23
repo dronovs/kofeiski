@@ -146,7 +146,7 @@ body {
   max-width: 576px;
   margin: 0 auto;
   padding: 0;
-  box-shadow: 0px 5px 20px 0px #00000029;
+  box-shadow: 0 5px 20px 0 #00000029;
 }
 
 h2 {
@@ -178,6 +178,10 @@ h2 {
   display: none;
 }
 
+.dark-theme {
+  letter-spacing: 0;
+}
+
 .header-wrapper {
   display: flex;
   border-bottom: 1px dashed #354259;
@@ -202,6 +206,7 @@ h2 {
 .lang-btns-wrapper {
   display: flex;
   max-height: 60px;
+  margin-right: 5px;
 }
 
 .lang-button {
@@ -222,23 +227,47 @@ h2 {
   margin-right: 5px;
 }
 
+.theme-tumbler-container {
+  display: flex;
+}
+
 .theme-tumbler {
   display: flex;
   justify-content: start;
   width: 50px;
   height: 20px;
-  border: 1px solid black;
+  border: 1px solid #354259;
   border-radius: 10px;
+  margin: 0 5px;
   padding-top: 1px;
   padding-left: 2px;
   padding-right: 2px;
 }
-
-.theme-tumbler-circle {
+.theme-tumbler .theme-tumbler-circle {
   display: inline-block;
   width: 16px;
   height: 16px;
-  border: 1px solid black;
+  border: 1px solid #354259;
+  border-radius: 50%;
+}
+
+.theme-tumbler-dark {
+  display: flex;
+  justify-content: end;
+  width: 50px;
+  height: 20px;
+  border: 1px solid #F0EBE3;
+  border-radius: 10px;
+  margin: 0 5px;
+  padding-top: 1px;
+  padding-left: 2px;
+  padding-right: 2px;
+}
+.theme-tumbler-dark .theme-tumbler-circle-dark {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  border: 1px solid #F0EBE3;
   border-radius: 50%;
 }
 
