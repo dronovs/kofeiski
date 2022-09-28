@@ -114,6 +114,9 @@ legend {
 /*dark theme*/
 .dark-theme {
   margin-bottom: 10px !important;
+  color: #F0EBE3 !important;
+}
+.dark-theme h2 {
   color: #F0EBE3;
 }
 
@@ -123,6 +126,7 @@ legend {
   letter-spacing: 5px;
 }
 .dark-theme li {
+  color: #F0EBE3;
   border-bottom: 1px dashed #F0EBE3;
   margin-bottom: 2px;
 }
@@ -132,6 +136,7 @@ body {
   font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono", "Droid Sans Mono", monospace, monospace;
   font-size: 15px;
   background-color: #F0EBE3;
+  scroll-behavior: smooth;
 }
 
 .body-dark-theme {
@@ -180,6 +185,11 @@ h2 {
 
 .dark-theme {
   letter-spacing: 0;
+}
+
+.goods-prices-dark {
+  border-bottom: 1px dashed #F0EBE3;
+  margin-bottom: 2px;
 }
 
 .header-wrapper {
