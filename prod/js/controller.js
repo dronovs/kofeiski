@@ -15,14 +15,12 @@ function controller (view, model) {
         if (event.target === engButton) {
             event.stopPropagation();
             view.renderEngWrapper();
-            englishWrapper.classList.remove('unchecked-language');
-            ukrainianWrapper.classList.add('unchecked-language');
+            view.addEngLang(englishWrapper, ukrainianWrapper);
             model.setEngLanguage();
         } else if (event.target === ukrButton) {
             event.stopPropagation();
             view.renderUkrWrapper();
-            englishWrapper.classList.add('unchecked-language');
-            ukrainianWrapper.classList.remove('unchecked-language');
+            view.addUkrLang(englishWrapper, ukrainianWrapper);
             model.setUkrLanguage();
         } else if (event.target === themeTumbler || event.target === themeTumblerCircle) {
             view.themeSwitch();
@@ -37,9 +35,10 @@ function controller (view, model) {
     function pageLoader () {
         if (localStorage.getItem('lang') === 'eng') {
             view.renderEngWrapper();
-            englishWrapper.classList.remove('unchecked-language');
-            ukrainianWrapper.classList.add('unchecked-language');
+            view.addEngLang(englishWrapper, ukrainianWrapper);
         } else if (localStorage.getItem('lang') === 'ua') {
+            view.renderUkrWrapper();
+        } else if (!localStorage.getItem('lang')) {
             view.renderUkrWrapper();
         }
         if (localStorage.getItem('theme') === 'dark') {

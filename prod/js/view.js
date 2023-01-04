@@ -9,7 +9,7 @@ function view () {
     const ukrPlate = document.createElement('div');
     ukrPlate.classList.add('classic-drinks-wrapper');
     ukrPlate.innerHTML = `<h2 class="h2titles">Класичні напої &#9829</h2>
-                <div class="classic-drinks">
+                <div class="container classic-drinks light-theme">
                     <ul class="classic-drinks-names">
                         <li class="goods-prices">Еспресо</li>
                         <li class="goods-prices">Макіато</li>
@@ -20,12 +20,12 @@ function view () {
                     </ul>
 
                     <ul class="classic-drinks-prices">
-                        <li class="goods-prices">30   43</li>
+                        <li class="goods-prices">30   45</li>
                         <li class="goods-prices">35</li>
-                        <li class="goods-prices">30   43   48</li>
-                        <li class="goods-prices">35   48   55</li>
-                        <li class="goods-prices">43   48   55   60</li>
-                        <li class="goods-prices">43   48   55   60</li>
+                        <li class="goods-prices">30   45   50</li>
+                        <li class="goods-prices">35   50   55</li>
+                        <li class="goods-prices">45   50   55   60</li>
+                        <li class="goods-prices">45   50   55   60</li>
                     </ul>
                 </div>
 
@@ -40,9 +40,9 @@ function view () {
                     </ul>
 
                     <ul class="coffee-drinks-prices">
-                        <li class="goods-prices">59</li>
+                        <li class="goods-prices">60</li>
                         <li class="goods-prices">60   65</li>
-                        <li class="goods-prices">69</li>
+                        <li class="goods-prices">70</li>
                         <li class="goods-prices">60   65</li>
                     </ul>
                 </div>
@@ -62,9 +62,9 @@ function view () {
                     <ul class="warming-drinks-prices">
                         <li class="goods-prices">35</li>
                         <li class="goods-prices">50</li>
-                        <li class="goods-prices">48   60</li>
+                        <li class="goods-prices">50   60</li>
                         <li class="goods-prices">50</li>
-                        <li class="goods-prices">48</li>
+                        <li class="goods-prices">50</li>
                     </ul>
                 </div>
             </div>
@@ -74,8 +74,8 @@ function view () {
                 <div class="additional">
                     <ul class="additional-names">
                         <li class="goods-prices">Зефірки</li>
-                        <li class="goods-prices">Рослинне</li>
                         <li class="goods-prices">Безлактозне</li>
+                        <li class="goods-prices">Рослинне</li>
                         <li class="goods-prices">Мед</li>
                     </ul>
 
@@ -93,7 +93,7 @@ function view () {
     const engPlate = document.createElement('div');
     engPlate.classList.add('classic-drinks-wrapper');
     engPlate.innerHTML = `<h2 class="h2titles">Classic coffee &#9829</h2>
-                <div class="classic-drinks">
+                <div class="container classic-drinks light-theme">
                     <ul class="classic-drinks-names">
                         <li class="goods-prices">Espresso</li>
                         <li class="goods-prices">Macchiato</li>
@@ -104,12 +104,12 @@ function view () {
                     </ul>
 
                     <ul class="classic-drinks-prices">
-                        <li class="goods-prices">30   43</li>
+                        <li class="goods-prices">30   45</li>
                         <li class="goods-prices">35</li>
-                        <li class="goods-prices">30   43   48</li>
-                        <li class="goods-prices">35   48   55</li>
-                        <li class="goods-prices">43   48   55   60</li>
-                        <li class="goods-prices">43   48   55   60</li>
+                        <li class="goods-prices">30   45   50</li>
+                        <li class="goods-prices">35   50   55</li>
+                        <li class="goods-prices">45   50   55   60</li>
+                        <li class="goods-prices">45   50   55   60</li>
                     </ul>
                 </div>
 
@@ -124,9 +124,9 @@ function view () {
                     </ul>
 
                     <ul class="coffee-drinks-prices">
-                        <li class="goods-prices">59</li>
+                        <li class="goods-prices">60</li>
                         <li class="goods-prices">60   65</li>
-                        <li class="goods-prices">69</li>
+                        <li class="goods-prices">70</li>
                         <li class="goods-prices">60   65</li>
                     </ul>
                 </div>
@@ -146,9 +146,9 @@ function view () {
                     <ul class="warming-drinks-prices">
                         <li class="goods-prices">35</li>
                         <li class="goods-prices">50</li>
-                        <li class="goods-prices">48   60</li>
+                        <li class="goods-prices">50   60</li>
                         <li class="goods-prices">50</li>
-                        <li class="goods-prices">48</li>
+                        <li class="goods-prices">50</li>
                     </ul>
                 </div>
             </div>
@@ -158,8 +158,8 @@ function view () {
                 <div class="additional">
                     <ul class="additional-names">
                         <li class="goods-prices">Marshmellow</li>
-                        <li class="goods-prices">Plant milk</li>
                         <li class="goods-prices">Non lactose</li>
+                        <li class="goods-prices">Plant milk</li>
                         <li class="goods-prices">Honey</li>
                     </ul>
 
@@ -193,5 +193,13 @@ function view () {
             header.classList.toggle('header-dark-theme');
             body.classList.toggle('body-dark-theme');
             },
+        addEngLang (engWrapper, ukrWrapper) {
+            engWrapper.classList.remove('unchecked-language');
+            ukrWrapper.classList.add('unchecked-language');
+        },
+        addUkrLang (engWrapper, ukrWrapper) {
+            engWrapper.classList.add('unchecked-language');
+            ukrWrapper.classList.remove('unchecked-language');
+        },
     }
 }

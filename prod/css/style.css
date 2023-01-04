@@ -79,10 +79,11 @@ legend {
   color: #354259;
 }
 
-.additional, .warming-drinks, .coffee-drinks, .classic-drinks {
+.winter-drinks, .additional, .warming-drinks, .coffee-drinks, .classic-drinks {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  margin-bottom: 10px !important;
 }
 
 .additional-names, .warming-drinks-names, .coffee-drinks-names, .classic-drinks-names {
@@ -95,7 +96,7 @@ legend {
   margin-bottom: 2px;
 }
 
-.additional-prices, .warming-drinks-prices, .coffee-drinks-prices, .classic-drinks-prices {
+.winter-drinks-prices, .additional-prices, .warming-drinks-prices, .coffee-drinks-prices, .classic-drinks-prices {
   width: 47%;
   padding: 0 5px;
   margin-bottom: 5px;
@@ -106,7 +107,7 @@ legend {
   flex-direction: column;
   justify-content: unset;
 }
-.additional-prices li, .warming-drinks-prices li, .coffee-drinks-prices li, .classic-drinks-prices li {
+.winter-drinks-prices li, .additional-prices li, .warming-drinks-prices li, .coffee-drinks-prices li, .classic-drinks-prices li {
   border-bottom: 1px dashed #354259;
   margin-bottom: 2px;
 }
@@ -150,7 +151,7 @@ body {
   width: 100%;
   max-width: 576px;
   margin: 0 auto;
-  padding: 0;
+  padding: 0 10px;
   box-shadow: 0 5px 20px 0 #00000029;
 }
 
@@ -176,7 +177,7 @@ h2 {
   padding: 0;
 }
 .carousel img {
-  max-height: 300px;
+  max-height: 250px;
 }
 
 .unchecked-language {
@@ -313,6 +314,31 @@ h2 {
 
 .additional-prices {
   letter-spacing: 10px;
+}
+
+footer {
+  background-color: #EEE3CB;
+  margin: 0 auto;
+}
+footer div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+}
+footer div p {
+  font-size: 10px;
+  margin: 0;
+  text-align: center;
+}
+footer div p span {
+  font-size: 12px;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.winter-drinks-prices {
+  letter-spacing: 0;
 }
 
 /*# sourceMappingURL=style.css.map */
